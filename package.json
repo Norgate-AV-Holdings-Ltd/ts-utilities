@@ -1,0 +1,26 @@
+{
+    "name": "ts-utilities",
+    "version": "1.0.0",
+    "description": "A collection of Typescript utilities",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Norgate-AV-Holdings-Ltd/ts-utilities.git"
+    },
+    "keywords": [
+        "ts",
+        "js",
+        "typescript",
+        "javascript",
+        "utilities"
+    ],
+    "author": "Norgate AV Holdings Ltd",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Norgate-AV-Holdings-Ltd/ts-utilities/issues"
+    },
+    "homepage": "https://github.com/Norgate-AV-Holdings-Ltd/ts-utilities#readme"
+}
