@@ -6,10 +6,9 @@
 			{
 				"targets": "node 10"
 			}
-		],
+		]
 	],
-	"plugins": [
-	],
+	"plugins": ["@babel/transform-runtime"],
 	"env": {
 		"esm": {
 			"presets": [

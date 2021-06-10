@@ -1,6 +1,7 @@
 import babel from "rollup-plugin-babel";
 import resolve from "rollup-plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
+import ts from "rollup-plugin-ts";
 
 const input = "src/index.ts";
 
@@ -8,7 +9,7 @@ const extensions = [".ts", ".tsx"];
 
 const babelOptions = {
     extensions,
-    babelrc: false, // to ignore @babel/transform-runtime
+    babelrc: false,
     exclude: "node_modules/**",
     presets: ["@babel/typescript", "@babel/env"],
 };
@@ -29,5 +30,13 @@ export default {
             file: "dist/bundle.umd.js",
             format: "umd",
         },
+    ],
+    plugins: [
+        resolve({ extensions }),
+        ts({
+            tsconfig: "tsconfig.json",
+        }),
+        babel(babelOptions),
+        terser(),
     ],
 };
